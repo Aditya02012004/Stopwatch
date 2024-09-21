@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light">
+    <div class="container">
+        <h1>Stopwatch</h1>
+        
+        <div id="display" class="display">00:00:00</div>
+
+        <div class="controls">
+            <button id="startBtn">Start (S)</button>
+            <button id="stopBtn">Stop (X)</button>
+            <button id="resetBtn">Reset (R)</button>
+            <button id="lapBtn">Lap (L)</button>
+        </div>
+
+        <div id="laps" class="laps">
+            <h2>Laps</h2>
+            <ul id="lapsList"></ul>
+        </div>
+
+        <div class="theme-toggle">
+            <button id="themeToggle">Switch to Dark Theme</button>
+        </div>
+        
+        <div id="graphContainer">
+            <canvas id="elapsedTimeGraph"></canvas>
+        </div>
+
+        <div class="custom-timer">
+            <label for="customTime">Custom Time (in seconds): </label>
+            <input type="number" id="customTime" min="1" placeholder="e.g., 60">
+            <button id="startCustomTime">Start Countdown</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
